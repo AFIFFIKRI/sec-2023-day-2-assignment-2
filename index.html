@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DAY 2 - ASSIGNEMENT 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .mainframe {
+        height: 900px;
+        width: 1600px;
+        position: relative;
+        background-color: #1e1f2f;
+        overflow: hidden;
+      }
+
+      .loremipsum h1 {
+        position: absolute;
+        width: 800px;
+        height: 400px;
+        top: 300px;
+        left: 130px;
+        font-family: "Bebas Neue", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 150px;
+        line-height: 146px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+      }
+
+      .group-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 8px;
+        gap: 80px;
+
+        position: absolute;
+        width: 620px;
+        height: 64px;
+        left: 130px;
+        top: 780px;
+      }
+
+      .group-a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 40px;
+
+        width: 264px;
+        height: 48px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+
+      .group-a1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 20px;
+
+        width: 264px;
+        height: 48px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+
+      .personbox {
+        width: 48px;
+        height: 48px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+
+      .twoperson {
+        position: absolute;
+        left: 2.17%;
+        right: 4.29%;
+        top: 14.58%;
+        bottom: 14.58%;
+      }
+
+      .pax {
+        width: 196px;
+        height: 48px;
+
+        font-family: "Bebas Neue";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 40px;
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+
+      .group-b {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 40px;
+
+        width: 264px;
+        height: 48px;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+      }
+
+      .group-b1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 20px;
+
+        width: 264px;
+        height: 48px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+
+      .clockbox {
+        width: 48px;
+        height: 48px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+
+      .clockpic {
+        position: absolute;
+        left: 57.5%;
+        right: 12.5%;
+        top: 8.33%;
+        bottom: 8.33%;
+      }
+
+      .time {
+        width: 196px;
+        height: 48px;
+
+        font-family: "Bebas Neue";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 40px;
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+
+        color: #ffffff;
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+
+      .warmups {
+        position: absolute;
+        width: 331px;
+        height: 96px;
+        left: 261.54px;
+        top: 125px;
+
+        font-family: "Bebas Neue";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 128%;
+
+        display: flex;
+        align-items: center;
+
+        color: #ffffff;
+      }
+
+      .group-2 {
+        position: absolute;
+        width: 91.54px;
+        height: 96px;
+        left: 130px;
+        top: 130px;
+      }
+
+      .group-c {
+        position: absolute;
+        width: 31.06px;
+        height: 27.42px;
+        left: 0px;
+        top: 0px;
+
+        background: #ffffff;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+      }
+
+      .group-d {
+        position: absolute;
+        width: 60.47px;
+        height: 68.55px;
+        left: 31.06px;
+        top: 27.42px;
+      }
+
+      .group-d1 {
+        position: absolute;
+        width: 60.47px;
+        height: 68.55px;
+        left: 0px;
+        top: 0px;
+
+        background: #e82c4f;
+
+        padding: 5px 0;
+        text-align: center;
+        font-size: 50px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #ffffff;
+      }
+
+      .ellipse45 {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 1249px;
+        top: 585px;
+
+        border: 20px solid #ffffff;
+        border-radius: 50%;
+      }
+
+      .rectangle113 {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 1169px;
+        top: 385px;
+
+        border: 20px solid #ffffff;
+      }
+
+      .rectangle111 {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        left: 1089px;
+        top: 305px;
+
+        border: 40px solid #e82c4f;
+      }
+
+      .rectangle110 {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 1089px;
+        top: 585px;
+
+        border: 20px solid #3256a1;
+      }
+
+      .rectangle107 {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 504px;
+        height: 618px;
+        left: 957px;
+        top: 166px;
+
+        border: 60px solid #ffffff;
+      }
+
+      .rectangle114 {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 558px;
+        height: 644px;
+        left: 1169px;
+        top: -179px;
+
+        border: 60px solid #48596d;
+      }
+
+      .rectangle115 {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 558px;
+        height: 644px;
+        left: 691px;
+        top: 385px;
+
+        border: 60px solid #2d2f48;
+      }
+
+      /* .background-1 {
+        position: absolute;
+        width: 1600px;
+        height: 900px;
+        left: 0px;
+        top: 900px;
+        background-color: #a1a1a1;
+      }
+
+      .background-2 {
+        position: absolute;
+        width: 1600px;
+        height: 1800px;
+        left: 1600px;
+        top: 0px;
+        background-color: #a1a1a1;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="mainframe">
+      <div class="rectangle114"></div>
+      <div class="rectangle115"></div>
+      <!-- <div class="background-1"></div>
+      <div class="background-2"></div> -->
+      <div class="loremipsum">
+        <h1>LOREM IPSUM NEQUE PORRO</h1>
+      </div>
+      <div class="group-1">
+        <div class="group-a">
+          <div class="group-a1">
+            <div class="personbox">
+              <img src="assets/2person.png" class="twoperson" />
+            </div>
+            <div class="pax">10 max.</div>
+          </div>
+        </div>
+
+        <div class="group-b">
+          <div class="group-b1">
+            <div class="clockbox">
+              <img src="assets/clock.png" class="clockpic" />
+            </div>
+            <div class="time">20 min</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="warmups">warmups</div>
+
+      <div class="group-2">
+        <div class="group-c"></div>
+        <div class="group-d">
+          <div class="group-d1">R</div>
+        </div>
+      </div>
+
+      <div class="ellipse45"></div>
+      <div class="rectangle113"></div>
+      <div class="rectangle111"></div>
+      <div class="rectangle110"></div>
+      <div class="rectangle107"></div>
+    </div>
+  </body>
+</html>
